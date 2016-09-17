@@ -1,5 +1,5 @@
-# PersonalInfo
-个人简介 | 求职简历
+# [PersonalInfo](https://github.com/Carol1992/PersonalInfo/blob/master/CV-ZH.md)
+[个人简介 | 求职简历](https://github.com/Carol1992/PersonalInfo/blob/master/CV-ZH.md)
 
 - [x] 联系方式 Contact Info
 - [x] 编程语言&框架 Programming Language&Framework
