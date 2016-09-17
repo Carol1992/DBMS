@@ -1,0 +1,11 @@
+
+{
+  "public": {
+    "recordsPerPage" : "5"
+  },
+  "private": {
+   "AWSAccessKeyId" : "AKIAI7B3IV6ABHNARDKA",
+  "AWSSecretAccessKey" : "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",
+  "AWSBucket" : "carols-photo-blog"
+  }
+}

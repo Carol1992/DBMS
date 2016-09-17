@@ -1,0 +1,43 @@
+<template name="home">
+	{{> dropzone}}
+</template>
+
+<template name="dropzone">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="dropzone" class="dropzone">
+        <div class="well well-drop-zone" id="move" contenteditable="true">
+          Drop file(s) here to upload
+          {{#each images}}
+		  {{> image}}
+		  {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="image">
+    <!-- <div class="col-md-12"> -->
+	<div class="thumbnails">		
+      <a href="{{url}}" target="_blank" class="thumbnail">
+        <img src="{{url}}" />
+      </a>
+    </div>
+		<!-- </div> -->
+</template>
+
+<!-- <template name="image">
+	<div class="container">
+		<div class="row">
+		{{#each images}}
+			<div class="col-xs-12 col-md-3">
+				<div class="thumbnail">
+					<a href="{{url}}" target="_blank">
+					<img class="single-img" src="{{url}}"/></a>
+				</div>
+			</div>
+		{{/each}}
+		</div>
+	</div>
+</template> -->
