@@ -11,14 +11,14 @@
 ## :sparkles: 项目列表
 项目简介 | 语言&工具 | 开源代码&文件
 ------------ | ------------- | -------------
-实现电子商城购物车功能 | PHP+MYSQL+Apache+JS+Docker | [购物车](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
-爬虫采集并分析**网招聘数据 | PHP+MYSQL+Apache+JS+Docker | [PHP 爬虫](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
-股票购买查询网站 | PHP+MYSQL+Apache+JS+Cloud9 | [CS50 Finance](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
-图片分享网站 | MeteorJS+MongoDB+Bootstrap+EC2 | [Photos Blog](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
-留守儿童公益项目（参赛） | MeteorJS+MongoDB+Bootstrap | [Angels-and-Love](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
-事件管理网站应用 | MeteorJS+MongoDB+Bootstrap | [Events Manager](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
-Increasing Real Estate Management Profits: Harnessing Data Analytics | SQL+Excel+Tableau+Pentaho | [Presentation](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
-Design and Build a Data Warehouse for Business Intelligence Implementation | Oracle+SQL+ErAssistant+MicroStrategy | [Presentation](https://github.com/Carol1992/cs50-edx/tree/master/CS50_Finance)
+用 PHP 写的一个书签收集网站 | PHP+MYSQL+Nginx+Linux+JS+Docker | [BookMarks](https://github.com/Carol1992/PersonalInfo/tree/master/php_BookMarks)
+爬虫采集并分析**网招聘数据 | PHP+MYSQL+Apache+JS+Docker | [PHP 爬虫](https://github.com/Carol1992/PersonalInfo/tree/master/PHP_Crawler)
+股票购买查询网站 | PHP+MYSQL+Apache+JS+Cloud9 | [CS50 Finance](https://github.com/Carol1992/PersonalInfo/tree/master/CS50_Finance)
+图片分享网站 | MeteorJS+MongoDB+Bootstrap+EC2 | [Photos Blog](https://github.com/Carol1992/PersonalInfo/tree/master/Photos_Share)
+留守儿童公益项目（参赛） | MeteorJS+MongoDB+Bootstrap | [Angels-and-Love](https://github.com/Carol1992/PersonalInfo/tree/master/Angels_and_Love)
+事件管理网站应用 | MeteorJS+MongoDB+Bootstrap | [Events Manager](https://github.com/Carol1992/PersonalInfo/tree/master/Events_Manager)
+Increasing Real Estate Management Profits: Harnessing Data Analytics | SQL+Excel+Tableau+Pentaho | [Presentation](https://github.com/Carol1992/PersonalInfo/tree/master/Data_Analysis)
+Design and Build a Data Warehouse for Business Intelligence Implementation | Oracle+SQL+ErAssistant+MicroStrategy | [Presentation](https://github.com/Carol1992/PersonalInfo/tree/master/DataWarehouse_Design)
 
 ## :sparkles: 教育背景
 * 学校/专业：[广东外语外贸大学](http://www.gdufs.edu.cn/)/[国际物流管理](http://bs.gdufs.edu.cn/)
