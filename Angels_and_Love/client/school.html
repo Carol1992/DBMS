@@ -1,0 +1,177 @@
+<template name="schools">
+   <br>
+    <div class="container" id="card-group">
+	    <div class="row">
+	    	{{#if isVolunteer}}
+				<button class="btn btn-warning btn-sm school_create" id="apply"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Hi Volunteer, please add new schools</button><hr>
+				{{> add_new_sch}}
+	    	{{/if}}
+	  	    <button class="btn btn-success btn-lg school_apply" id="apply"><i class="fa fa-plus-circle" aria-hidden="true"></i>  申请加入森林天使-留守儿童学校</button><hr>
+	  	    {{> add_new_school}}
+	    </div>
+		<div class="row">
+			{{#each schools}}
+			  <div class="col-xs-12 col-md-4" id="{{_id}}">
+				<div class="thumbnail">
+					{{#if isVolunteer}}
+					<p><i class="fa fa-trash fa-2x" aria-hidden="true" id="js-del-school"></i> 创建于 {{createdDate}}</p>
+					{{/if}}
+					<a href="/school/{{_id}}"><img class="js-image thumbnail-img"  src="{{img_src}}" alt="{{img_alt}}" /></a>
+					<div class="caption">           
+         				<h3>{{school}}</h3>
+						<p>{{img_alt}}</p>
+						<p>联系人： {{contact}}</p>
+						<p>学校规模： {{scale}}</p>
+						<p>地点： {{location}}</p>
+						<p>累计接受捐赠（万）： {{totalReceived}}</p>
+						{{#if isOrg}}
+						<a href="/school/{{_id}}" class="btn btn-success-outline" role="button" id="donateNow">现在捐赠</a>
+						{{/if}}
+					</div>
+				</div>
+			  </div> <!-- / col -->
+			{{/each}}
+		</div>
+	</div><br><br>
+</template>
+
+<template name="school">
+	<div class="container">
+	<br>
+		<div class="row" id="detail">
+		{{#if isOrg}}
+			<div class="row" id="donate">
+				<h3><strong>Just foor num test...</strong></h3><br>
+			</div>
+			<div class="input-group">
+				  <span class="input-group-addon"><strong>￥</strong></span>
+				  <input type="text" class="form-control donate-amount" aria-label="Amount" placeholder="input donate amount">
+				  <span class="input-group-addon">.00</span>
+			</div>
+			<a href="/organizations"><button class="btn btn-success btn-md donate" id="apply" type="submit"><i class="fa fa-jpy" aria-hidden="true"></i>  Donate now</button></a><br>
+		{{/if}}
+			<!-- <div class="row">
+				<br>
+				<h1 style="text-align:center"><strong>{{data.school}}</strong>主页</h1>
+			</div><br> -->
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/schools"><img class="single-org" src="{{data.img_src}}"/></a>
+				</div>
+				<div class="col-md-6">
+					<br><br><h3><strong>{{data.school}}<i class="fa fa-graduation-cap" aria-hidden="true"></i></strong></h3>
+					<p>{{data.img_alt}}</p>
+					<p>联系人： {{data.contact}}</p>
+					<p>学校规模： {{data.scale}}</p>
+					<p>地点： {{data.location}}</p>
+					<p>累计接受捐赠（万）： {{data.totalReceived}}</p>		
+				</div>
+			</div><hr>
+			{{data.school_alt}} <hr>
+			<!-- <div class="row">
+				{{>caseIntro}}
+			</div> -->
+<!-- 			<div class="container" id="card-group"> -->
+				<div class="row">
+				{{#each donates}}
+				  <div class="col-sm-3">
+				    <div class="card card-block">
+				      <h4 class="card-title"><button class="btn btn-success-outline btn-sm" style="width:100%"><strong>{{participants.organizationName}}-{{participants.schoolName}}</strong></button></h4>
+				     {{> donate_item}}
+				    </div>
+				  </div>
+				 {{/each}}
+				</div> <!-- end row -->
+<!-- 			</div> -->
+		</div>
+	</div><br><br>
+</template>
+
+<template name="donate_item">
+    <p class="card-text">捐赠日期：{{createdDate}}</p>
+    <p class="card-text">捐赠金额：<i class="fa fa-jpy" aria-hidden="true"></i>{{donate}}</p>
+    <h6 class="card-text">{{participants.schoolName}}收到{{participants.organizationName}}的捐赠人民币{{donate}}元。非常感谢{{participants.organizationName}}的爱心捐赠，{{participants.schoolName}}全体师生表示由衷的感谢！</h6>
+    <!-- <a href="/news" class="btn btn-success-outline">查看报道</a> -->
+</template>
+
+<template name="add_new_sch">
+	<div class="modal fade" id="add_new_sch">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title"><strong><h4>加入森林天使-留守儿童学校申请表</h4></strong></div>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<iframe src="https://www.niupic.com/" >
+						  <p>请到<a href="https://www.niupic.com/">牛图网</a>上传图片，图片大小不超过1M，并复制图片链接。</p>
+						</iframe>
+						<div class="form-group">
+							<label for="img_src">留守儿童学校图片链接</label>
+							<input type="text" class="form-control" id="img_src" placeholder="选择本机图片上传后，将图片链接复制到这里" name="img_src"/>
+						</div>
+						<div class="form-group">
+							<label for="school">学校名称</label>
+							<input type="text" class="form-control" id="school" placeholder="学校名称" name="school_name"/>
+						</div>
+						<div class="form-group">
+							<label for="scale">学校规模</label>
+							<input type="text" class="form-control" id="scale" placeholder="学校规模 人数" name="scale"/>
+						</div>
+						<div class="form-group">
+							<label for="location">所在地区</label>
+							<input type="text" class="form-control" id="location" placeholder="所在地区 具体到省份" name="location"/>
+						</div>
+						<div class="form-group">
+							<label for="totalDonations">累计接受捐赠金额（万）</label>
+							<input type="text" class="form-control" id="totalReceived" placeholder="累计接受捐赠金额（万）" name="totalReceived"/>
+						</div>
+						<div class="form-group">
+							<label for="contact">联系人</label>
+							<input type="text" class="form-control" id="contact" placeholder="联系人" name="contact"/>
+						</div>
+						<div class="form-group">
+						 <label for="img_alt">学校简介</label>
+							<textarea class="form-control" id="img_alt" placeholder="简单介绍学校情况，教学等" name="img_alt"></textarea>
+						</div>
+						<div class="form-group">
+						 <label for="school_alt">学校发展历史</label>
+							<textarea class="form-control" id="school_alt" placeholder="简单介绍学校情况，教学等" name="school_alt"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-warning pull-left" data-dismiss="modal" id="cancel-apply">取消申请</button>
+					<button class="btn btn-success pull-right" data-dismiss="modal" id="confirmed-apply">确认申请</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="add_new_school">
+	<div class="modal fade" id="add_new_school">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title"><strong><h2>森林天使-志愿者申请资料</h2></strong></div>
+				</div>
+				<div class="modal-body">
+					<h4><strong>申请资料：</strong></h4>
+					<ol>
+					  <li>学校名称，地址，规模，联系人</li>
+					  <li>学校累计受捐赠金额及证明材料</li>
+					  <li>学校简介，照片等</li>
+					  <li>所需捐赠说明</li>
+					  <li>留守儿童情况说明</li>
+					</ol>
+					<p>请将申请资料以邮件形式发送到<a href="mailto:someone@example.com?Subject=Angels%20Volunteer" target="_top" class="alert-link">森林天使公益学校</a>，谢谢！</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-warning pull-right" data-dismiss="modal" id="cancel-apply">取消申请</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+

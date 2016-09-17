@@ -1,0 +1,31 @@
+<template name="news">
+  <div class="container">
+  	<div class="row">
+		<div class="col-md-9 col-xs-12">
+			<iframe height=548 width=510 src="http://player.youku.com/embed/XNTM4MTc4MTcy" frameborder=0 allowfullscreen></iframe>
+	  	</div>
+  		<div class="col-md-3 col-xs-12">
+	  	    <br><p>留守儿童的现象一般只在中国被提及，也是中国近年出现的一个严重社会现象。</p>
+	  	    <p>其出现是由于现代化的发展而导致大批农村剩余劳动力向城市转移，是中国目前城乡二元体系松动的产物。在留守家庭中，父母需外出到城市打工以维持生计，但由于无法担负过高的城市生活成本而不能接孩子进城或留在身边。</p>
+	  	    <p>更严重的是，在一些地方，甚至出现了“留守童工”的现象。据2000年第五次人口普查资料显示，中国农村留守儿童已近2000万人。</p>
+	  	</div>
+	</div><br><hr>
+	<div class="row">
+		{{#each news}}
+			<div class="col-xs-12 col-md-4" id="{{_id}}">
+				<div class="card-group">
+				  <div class="card">
+				    <img class="card-img-top img-thumbnail" src="images/girl-chasing.jpg" alt="Card image cap">
+				    <div class="card-block">
+				      <h4 class="card-title">{{title}}</h4>
+				      <p class="card-text"><small class="text-muted">发布于 {{createdDate}}</small></p>
+				      <p class="card-text">{{news_detail}}</p>
+					  <button class="btn btn-success-outline btn-sm" href="#">了解更多</button>
+				    </div>
+				  </div> <!-- end card -->
+				</div> <!-- end card-group -->
+			</div>
+		{{/each}}
+	</div> <!-- end row -->
+  </div><br><br>
+</template>

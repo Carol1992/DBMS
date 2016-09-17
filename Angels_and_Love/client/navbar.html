@@ -1,0 +1,30 @@
+<template name="navbar">
+	<nav class="navbar navbar-dark bg-inverse navbar-full " id="nav-main">
+	  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNav">&#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="myNav">
+        <a class="navbar-brand" href="/"><img alt="Brand" src="/images/hearthand.jpg"></a>
+	      <ul class="nav navbar-nav">
+	        <li class="nav-item active">
+		      <a class="nav-link" href="/">Angels<span class="sr-only">(current)</span></a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="/organizations">Organizations<span class="sr-only">(current)</span></a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="/schools">Schools</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="/volunteers">Volunteers</a>
+		    </li>
+		  </ul>
+		  <form class="form-inline pull-xs-left hidden-sm-down" id="search">
+		    <input class="form-control" type="text" placeholder="Search">
+		    <button class="btn btn-success-outline" type="submit">Search</button>
+		  </form>
+	      <div class="navbar-text pull-xs-right">
+	        {{> loginButtons align="right"}}
+	      </div>   
+		</div>
+	</nav>
+</template>

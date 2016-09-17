@@ -1,0 +1,22 @@
+<head>
+  <title>森林天使|公益网站</title>
+  <!-- An icon would be cool -->
+  <link rel="icon" href="/images/ipad.ico" type="image/x-icon" />
+</head>
+
+<!-- we use flow-router to render our page -->
+<template name="layout">
+  {{> navbar}}
+  {{> Template.dynamic template=main}}
+  {{> footer}}
+</template>
+
+<!-- this is the home page layout -->
+<template name="home">
+  {{> cover}}
+  {{> applications}}
+  {{> intro}}
+  {{> news}}
+</template>
+
+
