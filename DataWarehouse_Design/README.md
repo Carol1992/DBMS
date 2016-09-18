@@ -1,0 +1,13 @@
+[Completed Project files](https://drive.google.com/drive/folders/0B0ildwxVXhbUNUZ3MGctRE1nWEE?usp=sharing)
+- [Background on CPI Card Group](https://drive.google.com/file/d/0B0ildwxVXhbUbS1UaEw4azBiUHc/view?usp=sharing)
+- [Data Warehouse Design Background](https://drive.google.com/file/d/0B0ildwxVXhbUOElLa1NLZlVIRm8/view?usp=sharing)
+- [Data Integration Background](https://drive.google.com/file/d/0B0ildwxVXhbUblprQU4tbnljVGc/view?usp=sharing)
+- [Background about Analytical Query Formulation](https://drive.google.com/file/d/0B0ildwxVXhbUT3VNSzJCZ1ZBRVE/view?usp=sharing)
+- [OracleDatabaseApplianceInstallation](https://drive.google.com/file/d/0B0ildwxVXhbUSU1hMzZIeWoyTDg/view?usp=sharing)
+- [OracleLocalDatabaseConnections](https://drive.google.com/file/d/0B0ildwxVXhbURnl2YUFXcGp4TzA/view?usp=sharing)
+- [PentahoDataIntegrationInstallation](https://drive.google.com/file/d/0B0ildwxVXhbUMkgtVkplcHpqLW8/view?usp=sharing)
+- [PentahoDataIntegrationTutorialMySQL](https://drive.google.com/file/d/0B0ildwxVXhbUeFB3ZWdjQ003cms/view?usp=sharing)
+- [Carol-Capstone-project-Analysis2016](https://drive.google.com/file/d/0B0ildwxVXhbUd1NtS2dueUViT3c/view?usp=sharing)
+- [SQL STATEMENTS](https://drive.google.com/file/d/0B0ildwxVXhbUTjdoQXM3UGZPNEU/view?usp=sharing)
+
+![](https://i.niupic.com/images/2016/09/18/omYB3N.png)
