@@ -17,8 +17,8 @@
 图片分享网站 | MeteorJS+MongoDB+Bootstrap+EC2 | [Photos Blog](https://github.com/Carol1992/PersonalInfo/tree/master/Photos_Share)
 留守儿童公益项目（参赛） | MeteorJS+MongoDB+Bootstrap | [Angels-and-Love](https://github.com/Carol1992/PersonalInfo/tree/master/Angels_and_Love)
 事件管理网站应用 | MeteorJS+MongoDB+Bootstrap | [Events Manager](https://github.com/Carol1992/PersonalInfo/tree/master/Events_Manager)
-Increasing Real Estate Management Profits: Harnessing Data Analytics | SQL+Excel+Tableau+Pentaho | [Presentation](https://github.com/Carol1992/PersonalInfo/tree/master/Data_Analysis)
-Design and Build a Data Warehouse for Business Intelligence Implementation | Oracle+SQL+ErAssistant+MicroStrategy | [Presentation](https://github.com/Carol1992/PersonalInfo/tree/master/DataWarehouse_Design)
+Increasing Real Estate Management Profits: Harnessing Data Analytics | SQL+Excel+Tableau | [Presentation](https://github.com/Carol1992/PersonalInfo/tree/master/Data_Analysis)
+Design and Build a Data Warehouse for Business Intelligence Implementation | Oracle+SQL+ErAssistant+MicroStrategy+Pentaho | [Presentation](https://github.com/Carol1992/PersonalInfo/tree/master/DataWarehouse_Design)
 
 ## :sparkles: 教育背景
 * 学校/专业：[广东外语外贸大学](http://www.gdufs.edu.cn/)/[国际物流管理](http://bs.gdufs.edu.cn/)
