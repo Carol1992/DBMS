@@ -1,5 +1,0 @@
-[Completed project files](https://drive.google.com/drive/folders/0B0ildwxVXhbURjlQLTRXR3EtSVU?usp=sharing)
-- [Tableau analize project sensitivity](https://public.tableau.com/profile/carol1376#!/vizhome/shared/5XBM5H8C6)
-- [Capstone-Template-Spreadsheet](https://drive.google.com/file/d/0B0ildwxVXhbUWVo3d0lvWElrbFE/view?usp=sharing)
-- [Presentation](https://youtu.be/RvrKxsOet4E)
-- [PPT](https://docs.google.com/presentation/d/1lEVZqwLnIz0YLt2NydYDE-He_QVtA8KSL1MGD3bkX3c/edit?usp=sharing)
